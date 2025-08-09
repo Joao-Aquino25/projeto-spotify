@@ -23,7 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 400px;
+  max-width: 400px;
   background-color: #121212;
   padding: 24px;
   padding-bottom: 90px;
@@ -109,7 +109,8 @@ main {
   background-color: #242424;
   padding: 8px 16px;
   border-radius: 20px;
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   margin: 30px auto;
 }
 
