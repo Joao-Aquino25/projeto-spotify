@@ -198,3 +198,53 @@ main {
   padding: 12px;
   font-weight: bolder;
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    overflow-x: auto;
+  }
+
+  .nav-library,
+  .nav-playlist,
+  .nav-podcast,
+  .nav-footer,
+  .nav-lang-button {
+    display: none;
+    /* você pode esconder ou adaptar esses elementos */
+  }
+
+  .nav-logo {
+    font-size: 18px;
+  }
+
+  main {
+    padding: 16px;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .artists-grid,
+  .albums-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+
+  .banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
